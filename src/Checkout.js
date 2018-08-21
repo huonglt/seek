@@ -1,6 +1,4 @@
-const Customers = require('./Customers');
 const Products = require('./Products');
-const CustomerPricingRules = require('./CustomerPricingRules');
 
 class Checkout {
     constructor(customerPricingRules) {
