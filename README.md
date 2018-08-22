@@ -8,10 +8,9 @@ All non privileged customers are Default<br/>
 
 Pure Javascript app running on NodeJS, only uses ES6, functional programming, and Jest as a test runner<br/>
 ### Prerequisites
-NodeJS - I am using Node v10.2.1
-NPM - I am using 5.6.0
-or Yarn - I am using 1.7.0
-
+NodeJS - I am using Node v10.2.1<br/>
+NPM - I am using 5.6.0<br/>
+or Yarn - I am using 1.7.0<br/>
 ### Installing
 Clone the git repo to your folder
 ```
