@@ -10,11 +10,12 @@ NPM - I am using 5.6.0
 or Yarn - I am using 1.7.0
 
 ### Installing
-Clone the git repo to your machine
+Clone the git repo to your folder
 ```
 git clone https://github.com/huonglt/seek.git
+
 ```
-then installing dependencies
+then cd to folder seek, and install dependencies
 ```
 npm install
 ```
@@ -39,8 +40,15 @@ or
 ```
 npm test
 ```
-## Examples to run the app to see it in action
-
+## Examples based on requirements doc to see the app in action
+The below request is for customer Default ordering classic, standout, premium
+```
+curl "http://localhost:8081/checkout?customer=Default&item=classic&item=standout&tem=premium"
+```
+The below request is for customer Unilever ordering classic, classic, classic, premium
+```
+curl "http://localhost:8081/checkout?customer=Unilever&item=classic&item=classic&tem=classic&item=premium"
+```
 The below request is for customer Apple ordering standout, standout, standout, premium products
 ```
 curl "http://localhost:8081/checkout?customer=Apple&item=standoutc&item=standout&item=standout&item=premium"
