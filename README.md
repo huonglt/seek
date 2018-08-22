@@ -1,5 +1,5 @@
 # SEEK - Job Ads Checkout system
-This is a nodejs http server app to handle checkout requests from recruiters who are SEEK clients<br/>
+This is a small, and simple nodejs http server app to handle checkout requests from recruiters who are SEEK clients<br/>
 As for now the http request must be GET<br/>
 Recruiters advertise job ads on SEEK system.<br/>
 They can choose Classic Ad, Standout Ad, or Premium Ad for their job ads<br/>
@@ -60,5 +60,11 @@ The below request is for customer Nike ordering premium, premium, premium, premi
 ```
 curl "http://localhost:8081/checkout?customer=Nike&item=premium&item=premium&item=premium&item=premium"
 ```
-## Authors
+## Further Improvements
+More things could be done to make this app better such as:
+- Handle POST instead of GET
+- More pricing rules, with complicated rules
+- Handle more customers
+- Add more features
+## Author
 Helen Le
