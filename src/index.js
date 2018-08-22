@@ -6,6 +6,11 @@ const CustomerPricingRules = require('./CustomerPricingRules');
 const Products = require('./Products');
 const { log } = require('./logger');
 
+/**
+ * Handle a checkout
+ * @param {Object} An object with customerNamne, and list of productIDs ordereed
+ * @return {number} The total price
+ */
 const processCheckout = ({customerName, productIDs}) => {
     log(`---Processing checkout for ${customerName} customer---`);
     const customerPricingRules = CustomerPricingRules.findCustomerPricingRules(customerName);
@@ -26,7 +31,9 @@ const processCheckout = ({customerName, productIDs}) => {
     return total;
 };
 
-
+/**
+ * Write response data as json object
+ */
 const writeResponseData = (res, data) => {
     res.statusCode = 200;
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -35,6 +42,14 @@ const writeResponseData = (res, data) => {
     res.end();
 };
 
+/**
+ * Create and start a HTTP server running on HTTP_PORT
+ * The server will handle GET requests for checkout
+ * It sends back response as JSON data
+ * Eg of requests:
+ * "http://localhost:8081/checkout?customerName=Default&item=classic&item=standout&item=premium"
+ * "http://localhost:8081/checkout?customer=Apple&item=standout&item=standout&item=standout&item=premium"
+ */
 http.createServer((req, res) => {
     try {
         const urlParts = url.parse(req.url, true);
