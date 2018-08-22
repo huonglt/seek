@@ -62,8 +62,9 @@ curl "http://localhost:8081/checkout?customer=Nike&item=premium&item=premium&ite
 ## Further Improvements
 More things could be done to make this app better such as:
 - Handle POST instead of GET
-- More pricing rules, with complicated rules
+- Handle more complicated pricing rules
 - Handle more customers
+- More test cases
 - Add more features
 ## Author
 Helen Le
