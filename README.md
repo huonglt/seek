@@ -1,5 +1,6 @@
 # SEEK - Job Ads Checkout system
 This is a nodejs http server app to handle checkout requests from recruiters who are SEEK clients<br/>
+As for now the http request must be GET<br/>
 Recruiters advertise job ads on SEEK system.<br/>
 They can choose Classic Ad, Standout Ad, or Premium Ad for their job ads<br/>
 The recruiters can be privileged clients of SEEK naming Unilever, Apple, Nike, Ford.<br/>
